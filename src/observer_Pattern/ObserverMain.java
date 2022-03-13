@@ -5,9 +5,9 @@ public class ObserverMain {
     public static void main(String args[]) {
         Subject subject = new Subject();
 
-//        new StringObserver(subject);
-//        new OctalObserver(subject);
-//        new HexaDecimal(subject);
+        new StringObserver(subject);
+        new OctalObserver(subject);
+        new HexaDecimal(subject);
 
         System.out.println("State change: 45");
         subject.setState(45);
